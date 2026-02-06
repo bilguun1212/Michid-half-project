@@ -16,7 +16,7 @@ const Projects = () => {
             <h5 className="text-yellow-600 font-black tracking-[0.3em] uppercase mb-4 animate-fade-in">Хийж гүйцэтгэсэн ажил</h5>
             <h2 className="text-5xl font-black text-gray-900 leading-tight italic animate-fade-in duration-700">Манай шилдэг <br/> төслүүд</h2>
           </div>
-          <Link href="/projects" className="border-2 border-gray-900 px-10 py-5 font-bold hover:bg-yellow-500 hover:border-yellow-500 transition-all duration-300 uppercase tracking-widest text-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 inline-block">
+          <Link href="/projects" className="border-2 border-gray-900 px-8 py-3 rounded-md font-bold uppercase tracking-wider text-sm transition duration-300 hover:bg-yellow-500 hover:border-yellow-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-500 inline-block">
             Бүх төсөл үзэх
           </Link>
         </div>

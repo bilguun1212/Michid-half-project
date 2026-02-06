@@ -14,9 +14,8 @@ const Footer = () => {
               Бид байгаль орчинд ээлтэй, эдийн засгийн хэмнэлттэй эрчим хүчний шийдлийг Монгол улсын өнцөг булан бүрт хүргэнэ.
             </p>
             <div className="flex gap-4">
-         
-               <a href="#" className="w-10 h-10 border border-gray-700 flex items-center justify-center hover:bg-yellow-500 hover:border-yellow-500 transition cursor-pointer focus:outline-none focus:ring-2 focus:ring-yellow-500" aria-label="Facebook">f</a>
-               <a href="#" className="w-10 h-10 border border-gray-700 flex items-center justify-center hover:bg-yellow-500 hover:border-yellow-500 transition cursor-pointer focus:outline-none focus:ring-2 focus:ring-yellow-500" aria-label="LinkedIn">in</a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-gray-700 flex items-center justify-center hover:bg-yellow-500 hover:border-yellow-500 transition cursor-pointer focus:outline-none focus:ring-2 focus:ring-yellow-500" aria-label="Facebook">f</a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-gray-700 flex items-center justify-center hover:bg-yellow-500 hover:border-yellow-500 transition cursor-pointer focus:outline-none focus:ring-2 focus:ring-yellow-500" aria-label="LinkedIn">in</a>
             </div>
           </div>
 
@@ -63,8 +62,8 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500 text-sm">
           <p>&copy; {currentYear} Michid Solar Energy. Бүх эрх хуулиар хамгаалагдсан.</p>
           <div className="flex gap-8">
-            <a href="#" className="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-yellow-500 p-1">Нууцлалын бодлого</a>
-            <a href="#" className="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-yellow-500 p-1">Үйлчилгээний нөхцөл</a>
+            <Link href="/privacy" className="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-yellow-500 p-1">Нууцлалын бодлого</Link>
+            <Link href="/terms" className="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-yellow-500 p-1">Үйлчилгээний нөхцөл</Link>
           </div>
         </div>
       </div>

@@ -24,17 +24,17 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-6">
           <div className="flex gap-4">
-            <a href="#" className="hover:text-yellow-500 transition">Fb</a>
-            <a href="#" className="hover:text-yellow-500 transition">In</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 transition">Fb</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 transition">In</a>
           </div>
         </div>
       </div>
 
   
       <nav className={`px-6 lg:px-12 py-4 flex justify-between items-center transition-all ${
-        isScrolled ? 'bg-white shadow-xl py-3' : 'bg-transparent text-white'
+        isScrolled ? 'bg-white shadow-sm py-3' : 'bg-transparent text-white'
       }`}>
-        <Link href="/" className="text-3xl font-black tracking-tighter focus:outline-none focus:ring-2 focus:ring-yellow-500 p-1">
+        <Link href="/" className={`text-3xl font-black tracking-tighter focus:outline-none focus:ring-2 focus:ring-yellow-500 p-1 ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
           MICHID<span className="text-yellow-500">SOLAR</span>
         </Link>
 
@@ -46,13 +46,14 @@ const Navbar = () => {
           <Link href="/about" className="hover:text-yellow-500 transition focus:outline-none focus:ring-2 focus:ring-yellow-500 p-1">Бидний тухай</Link>
           <Link href="/services" className="hover:text-yellow-500 transition focus:outline-none focus:ring-2 focus:ring-yellow-500 p-1">Үйлчилгээ</Link>
           <Link href="/projects" className="hover:text-yellow-500 transition focus:outline-none focus:ring-2 focus:ring-yellow-500 p-1">Төслүүд</Link>
-          <Link href="/about" className="bg-yellow-500 text-gray-900 px-8 py-4 hover:bg-gray-800 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-yellow-500">
+          <Link href="/about" className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-md font-bold uppercase tracking-wider shadow-md transition duration-300 hover:bg-yellow-400 hover:text-gray-900 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
             Үнийн санал авах
           </Link>
         </div>
 
    
         <button
+          type="button"
           className={`lg:hidden flex flex-col gap-1.5 focus:outline-none focus:ring-2 focus:ring-yellow-500 p-2`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle navigation menu"
@@ -66,9 +67,9 @@ const Navbar = () => {
 
    
       {isMobileMenuOpen && (
-        <div className={`lg:hidden absolute top-full left-0 right-0 transition-all duration-300 ${
-          isScrolled ? 'bg-white shadow-lg' : 'bg-gray-900/95 backdrop-blur-sm'
-        }`}>
+        <div className={`lg:hidden absolute top-full left-0 right-0 transition-transform transition-opacity duration-300 ease-in-out transform origin-top ${
+          isScrolled ? 'bg-white shadow-lg text-gray-800' : 'bg-gray-900/95 backdrop-blur-sm text-white'
+        } z-[1100]`}>
           <div className="flex flex-col space-y-0 py-4">
             <Link 
               href="/" 
@@ -108,7 +109,7 @@ const Navbar = () => {
             </Link>
             <Link 
               href="/about" 
-              className="mx-6 mb-4 bg-yellow-500 text-gray-900 px-8 py-4 font-bold uppercase text-sm tracking-widest hover:bg-gray-800 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="mx-6 mb-4 bg-yellow-500 text-gray-900 px-8 py-3 rounded-md font-bold uppercase tracking-wider text-sm shadow-md transition duration-300 hover:bg-yellow-400 hover:text-gray-900 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
               onClick={closeMobileMenu}
             >
               Үнийн санал авах

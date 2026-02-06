@@ -44,9 +44,9 @@ const ContactSection = () => {
                   </li>
                 </ul>
               </div>
-              <Link href="/about" className="bg-yellow-500 text-gray-900 w-full py-5 font-black uppercase tracking-widest hover:bg-gray-900 hover:text-white transition-all duration-300 shadow-xl inline-flex items-center justify-center">
-                Бидний тухай урагш мэдэхүүлэх
-              </Link>
+              <Link href="/about" className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-md font-bold uppercase tracking-wider transition duration-300 hover:bg-gray-900 hover:text-white shadow-xl inline-flex items-center justify-center w-full">
+                  Бидний тухай урагш мэдэхүүлэх
+                </Link>
             </div>
           </div>
         </div>

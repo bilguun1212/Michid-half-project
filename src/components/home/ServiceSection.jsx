@@ -90,6 +90,7 @@ const ServiceSection = () => {
           >
         
             <button 
+              type="button"
               className="absolute top-4 right-4 text-3xl font-light text-gray-400 hover:text-yellow-500 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 p-2"
               onClick={() => setActiveService(null)}
               aria-label="Close modal"
@@ -113,8 +114,9 @@ const ServiceSection = () => {
               
          
               <button 
+                type="button"
                 onClick={() => setActiveService(null)}
-                className="w-full bg-yellow-500 text-gray-900 px-8 py-4 font-black uppercase tracking-widest text-sm hover:bg-gray-900 hover:text-white hover:shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 mt-8"
+                className="w-full bg-yellow-500 text-gray-900 px-8 py-3 rounded-md font-bold uppercase tracking-wider text-sm transition duration-300 hover:bg-gray-900 hover:text-white hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 mt-8"
               >
                 Хаах
               </button>

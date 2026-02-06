@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ServiceCard = ({ service, onLearnMore }) => {
   const [isImageLoaded, setIsImageLoaded] = React.useState(false);
@@ -41,13 +42,14 @@ const ServiceCard = ({ service, onLearnMore }) => {
             {service.desc}
           </p>
 
-          <button 
-            onClick={() => onLearnMore(service)}
-            className="font-bold text-gray-900 flex items-center gap-2 group-hover:text-yellow-600 transition uppercase tracking-widest text-sm hover:gap-3 focus:outline-yellow-500"
+          <Link
+            href="/services"
+            onClick={() => onLearnMore && onLearnMore(service)}
+            className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider transition duration-300 text-gray-900 group-hover:text-yellow-600 focus:outline-none"
             aria-label={`Learn more about ${service.title}`}
           >
             Дэлгэрэнгүй <span className="text-xl transition-transform duration-300">→</span>
-          </button>
+          </Link>
         </div>
       </div>
     </div>

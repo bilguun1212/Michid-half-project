@@ -52,7 +52,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <Link href="/about" className="bg-gray-900 text-white px-10 py-5 font-black uppercase tracking-widest hover:bg-yellow-500 hover:text-gray-900 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-yellow-500 inline-block">
+            <Link href="/about" className="bg-white border-gray-200 border text-gray-900 px-8 py-3 rounded-md font-bold uppercase tracking-wider transition duration-300 hover:bg-yellow-500 hover:text-white hover:shadow-lg transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-yellow-500 inline-block">
               Илүү ихийг мэдэх
             </Link>
           </div>
@@ -87,9 +87,9 @@ const AboutSection = () => {
             opacity: 1;
             transform: translateY(0);
           }
-        }
-        .animate-fade-in {
-          animation: fade-in 0.6s ease-out forwards;
+            <Link href="/about" className="bg-gray-900 text-white px-8 py-3 rounded-md font-bold uppercase tracking-wider transition duration-300 hover:bg-yellow-500 hover:text-gray-900 hover:shadow-lg transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-yellow-500 inline-block">
+              Илүү ихийг мэдэх
+            </Link>
         }
         .animate-fade-in-down {
           animation: fade-in-down 0.7s ease-out 0.1s forwards;

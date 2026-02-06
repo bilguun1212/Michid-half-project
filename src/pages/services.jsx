@@ -124,7 +124,7 @@ const Services = () => {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
             Манай инженерүүд таны төслийн бүрэн мэдээллийг авч, хамгийн сүүлийн үеийн технологиор төлөвлөх болно.
           </p>
-          <a href="tel:+976" className="bg-yellow-500 text-gray-900 px-10 py-4 font-black uppercase tracking-widest hover:bg-gray-900 hover:text-white transition inline-block">
+          <a href="tel:+976" className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-md font-bold uppercase tracking-wider shadow-md transition duration-300 hover:bg-gray-900 hover:text-white hover:shadow-lg inline-block">
             Үнийн санал авах
           </a>
         </section>

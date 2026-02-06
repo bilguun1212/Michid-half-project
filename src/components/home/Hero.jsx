@@ -23,10 +23,10 @@ const Hero = () => (
           Бид хамгийн сүүлийн үеийн технологиор таны цахилгааны зардлыг 100% хүртэл хэмнэх нарны системийг санал болгож байна.
         </p>
         <div className="flex flex-wrap gap-5 animate-slide-in-from-up">
-          <Link href="/about" className="bg-yellow-500 text-gray-900 px-8 md:px-10 py-4 md:py-5 font-black uppercase tracking-tighter hover:bg-white hover:shadow-lg transition-all transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-yellow-500 inline-block">
+          <Link href="/about" className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-md font-bold uppercase tracking-wider shadow-md transition duration-300 hover:bg-yellow-400 hover:text-gray-900 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 inline-block">
             Бидэнтэй нэгдэх
           </Link>
-          <Link href="/projects" className="border-2 border-white/30 text-white px-8 md:px-10 py-4 md:py-5 font-black uppercase tracking-tighter hover:bg-white hover:text-gray-900 hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-white inline-block">
+          <Link href="/projects" className="border-2 border-white/30 text-white px-8 py-3 rounded-md font-bold uppercase tracking-wider transition duration-300 hover:bg-white hover:text-gray-900 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-white inline-block">
             Манай төслүүд
           </Link>
         </div>

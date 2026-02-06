@@ -95,12 +95,12 @@ const About = () => {
               Манай инженерүүд таны нарны тогтолцооны давуу талыг төлөвлөх бөгөөд таны бүх асуультанд хариулахад бэлэн байна.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/" className="bg-yellow-500 text-gray-900 px-10 py-4 font-black uppercase tracking-widest hover:bg-white transition inline-block">
-                Үйлчилгээний хуудас
-              </Link>
-              <a href="tel:+976" className="border-2 border-yellow-500 text-white px-10 py-4 font-black uppercase tracking-widest hover:bg-yellow-500 hover:text-gray-900 transition inline-block">
-                Дуудлага хийх
-              </a>
+                <Link href="/" className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-md font-bold uppercase tracking-wider transition duration-300 hover:bg-yellow-400 hover:text-gray-900 inline-block">
+                  Үйлчилгээний хуудас
+                </Link>
+                <a href="tel:+976" className="border-2 border-yellow-500 text-white px-8 py-3 rounded-md font-bold uppercase tracking-wider transition duration-300 hover:bg-yellow-500 hover:text-gray-900 inline-block">
+                  Дуудлага хийх
+                </a>
             </div>
           </div>
         </section>
